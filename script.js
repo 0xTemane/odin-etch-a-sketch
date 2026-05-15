@@ -1,5 +1,7 @@
 const gridContainer = document.querySelector(".grid-container");
 const buttonGridSize = document.querySelector("#btn-grid-size");
+const buttonToggleBorder = document.querySelector("#btn-toggle-border");
+
 buttonGridSize.addEventListener("click", () => {
     const input = prompt("Enter a number between 1 and 100 😉");
     if (input >= 1 && input <= 100){
@@ -9,6 +11,10 @@ buttonGridSize.addEventListener("click", () => {
     }
 })
 
+buttonToggleBorder.addEventListener("click", () => {
+    const squares = document.querySelectorAll(".square");
+    squares.forEach(square => square.classList.toggle("border"))
+})
 
 function createGrid(gridSize = 16) {
     gridSize = Math.round(gridSize);
@@ -17,6 +23,7 @@ function createGrid(gridSize = 16) {
     } for (let i = 0; i < (gridSize * gridSize); i++){
         const square = document.createElement("div");
         square.classList.add("square");
+        square.classList.add("border");
         square.style.flexBasis = `${800 / gridSize}px`;
         square.addEventListener("mouseover", () => square.classList.add("black"))
         gridContainer.appendChild(square);
