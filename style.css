@@ -10,7 +10,8 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    overflow-y: hidden;  
 }
 
 h1 {
@@ -67,6 +68,7 @@ h1 {
 
 #btn-black {
     background-color: black;
+    border: 5px solid rgb(26, 189, 26);
     color: white;
 }
 
@@ -81,8 +83,4 @@ h1 {
 
 .border {
     border: 1px solid black;
-}
-
-.black {
-    background-color: rgb(26, 25, 25);
 }
