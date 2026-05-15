@@ -6,9 +6,9 @@ const actualGridSize = 16;
 
 buttonGridSize.addEventListener("click", () => {
     const input = prompt("Enter a number between 1 and 100 😉");
-    gridSize = input;
     if (input >= 1 && input <= 100){
         createGrid(input);
+        actualGridSize = input;
     } else {
         alert("Sorry, your input is incorrect 😔");
     }
