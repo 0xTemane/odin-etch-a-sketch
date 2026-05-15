@@ -24,11 +24,13 @@ h1 {
 
 .btn-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1;
     gap: 15px;
 }
 
-#btn-grid-size, #btn-toggle-border {
+#btn-grid-size, #btn-toggle-border, #btn-reset {
     padding: 10px;
     margin-bottom: 15px;
     border: none;
@@ -36,7 +38,7 @@ h1 {
     background-color: rgb(235, 231, 231);
 }
 
-#btn-grid-size:hover, #btn-toggle-border:hover{
+#btn-grid-size:hover, #btn-toggle-border:hover, #btn-reset:hover{
     opacity: 80%;
 }
 
