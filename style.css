@@ -20,6 +20,14 @@ h1 {
     font-style: normal;
     font-size: 60px;
     color: rgb(108, 17, 192);
+    margin-bottom: 0;
+}
+
+p {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal; 
+    font-size: 20px;
     margin-bottom: 15px;
 }
 
