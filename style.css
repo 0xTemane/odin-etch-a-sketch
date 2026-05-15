@@ -1,12 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
 body * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+}
+
+h1 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 60px;
+    color: rgb(108, 17, 192);
+    margin-bottom: 15px;
+}
+
+#btn-grid-size {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+#btn-grid-size:hover{
+    opacity: 80%;
 }
 
 .grid-container {
