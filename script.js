@@ -2,7 +2,7 @@ const gridContainer = document.querySelector(".grid-container");
 const buttonGridSize = document.querySelector("#btn-grid-size");
 const buttonToggleBorder = document.querySelector("#btn-toggle-border");
 const buttonReset = document.querySelector("#btn-reset");
-const actualGridSize = 16;
+let actualGridSize = 16;
 
 buttonGridSize.addEventListener("click", () => {
     const input = prompt("Enter a number between 1 and 100 😉");
