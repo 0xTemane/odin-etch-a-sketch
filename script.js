@@ -1,5 +1,6 @@
 const gridContainer = document.querySelector(".grid-container");
-const ButtonGridSize = document.querySelector("#btn-grid-size");
+const buttonGridSize = document.querySelector("#btn-grid-size");
+
 
 function createGrid(gridSize = 16) {
     gridSize = Math.round(gridSize);
